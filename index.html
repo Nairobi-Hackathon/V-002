@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compliance Management Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .sidebar {
+            height: 100vh;
+            background-color: #343a40;
+            color: white;
+            padding-top: 20px;
+        }
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 15px;
+        }
+        .sidebar a:hover {
+            background-color: #495057;
+        }
+        .main-content {
+            margin-left: 250px;
+            padding: 20px;
+        }
+        .card {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="d-flex">
+        <div class="sidebar p-3">
+            <h4>Compliance Dashboard</h4>
+            <a href="#overview">Overview</a>
+            <a href="#audits">Audits</a>
+            <a href="#risk-assessments">Risk Assessments</a>
+            <a href="#regulation-management">Regulation Management</a>
+            <a href="#notifications">Notifications</a>
+            <a href="#settings">Settings</a>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content container-fluid">
+            <h2 id="overview" class="mb-4">Dashboard Overview</h2>
+
+            <!-- Cards for quick stats -->
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card bg-info text-white">
+                        <div class="card-body">
+                            <h5 class="card-title">Pending Audits</h5>
+                            <p class="card-text">5 Audits</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card bg-warning text-white">
+                        <div class="card-body">
+                            <h5 class="card-title">Risk Assessments</h5>
+                            <p class="card-text">3 Assessments</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card bg-danger text-white">
+                        <div class="card-body">
+                            <h5 class="card-title">Compliance Issues</h5>
+                            <p class="card-text">2 Issues</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card bg-success text-white">
+                        <div class="card-body">
+                            <h5 class="card-title">Notifications</h5>
+                            <p class="card-text">8 New</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sections for Audits, Risk Assessments, Regulation Management, and Notifications -->
+            <h3 id="audits" class="mt-5">Audits</h3>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Recent Audits</h5>
+                    <p class="card-text">Track and manage ongoing audits.</p>
+                </div>
+            </div>
+
+            <h3 id="risk-assessments" class="mt-5">Risk Assessments</h3>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Ongoing Risk Assessments</h5>
+                    <p class="card-text">Monitor and manage risk assessment processes.</p>
+                </div>
+            </div>
+
+            <h3 id="regulation-management" class="mt-5">Regulation Management</h3>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Regulation Updates</h5>
+                    <p class="card-text">Customizable workflows for managing regulations.</p>
+                </div>
+            </div>
+
+            <h3 id="notifications" class="mt-5">Notifications</h3>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Recent Notifications</h5>
+                    <p class="card-text">Receive personalized notifications for compliance tasks.</p>
+                </div>
+            </div>
+
+            <h3 id="settings" class="mt-5">Settings</h3>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Manage Settings</h5>
+                    <p class="card-text">Configure system settings and user roles.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
